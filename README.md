@@ -36,7 +36,7 @@ We can run `docker images` command to check if we have successfully created the 
 **Step 5: Run the docker image on a bare linux system**
 
 ```
-docker run —name=webapp -d -p 5000:5000 simple-flask-app:latest
+docker run --name=webapp -d -p 5000:5000 simple-flask-app:latest
 ```
 
 We can then jump over to Chrome web browser and type in the link: http://localhost:5000 to see if the application has been deployed correctly. Below is a snapshot I captured from the web browser for the outcome of the running application.
@@ -60,7 +60,13 @@ docker push markwu100/simple-flask-app:latest
 By now, a docker image that could be deployed to the kubernetes cluster is ready in the docker hub repository. If you like, you can also use the below command to pull the image and deploy it on you local machine. 
 
 ```
-docker pull markwu100/simple-flask-app
+docker pull markwu100/simple-flask-app:latest
+```
+
+After you pull the docker images, run the following command to test the application. 
+
+```
+docker run --name=webapp -d -p 5000:5000 markwu100/simple-flask-app:latest
 ```
 
 
