@@ -1,4 +1,4 @@
-# Solution on how to create and deploy application Into Kubernetes cluster
+# Solution on how to create and deploy application into kubernetes cluster
 
 ### **Section One:  Build the application as a docker image**
 
@@ -39,7 +39,7 @@ We can run `docker images` command to check if we have successfully created the 
 docker run —name=webapp -d -p 5000:5000 simple-flask-app:latest
 ```
 
-We can then jump over over to Chrome web browser and type in the link: http://localhost:5000 to see if the application has been deployed correctly. Below is a snapshot I captured from the web browser for the outcome of the running application.
+We can then jump over to Chrome web browser and type in the link: http://localhost:5000 to see if the application has been deployed correctly. Below is a snapshot I captured from the web browser for the outcome of the running application.
 
 ![snapshot](https://tva1.sinaimg.cn/large/00831rSTly1gck4l01sufj30tv0btjrn.jpg)
 
